@@ -128,11 +128,11 @@ end
 ---
 
 ## 🔷 Key Observations
-
+<br>
 ✔ Reset acts immediately (no clock needed)
-✔ Preset waits for clock edge
-✔ Counter correctly wraps after 9
-✔ Design mixes synchronous + asynchronous behavior
+<br>✔ Preset waits for clock edge
+<br>✔ Counter correctly wraps after 9
+<br>✔ Design mixes synchronous + asynchronous behavior
 
 ---
 
@@ -146,7 +146,7 @@ end
 
 ## 🔷 Conclusion
 
-This design demonstrates:
-✔ Mod-10 counting
-✔ Difference between synchronous & asynchronous control
-✔ Real-world issue: **metastability**
+This design demonstrates: <br>
+✔ Mod-10 counting <br>
+✔ Difference between synchronous & asynchronous control <br>
+✔ Real-world issue: **metastability** <br>
