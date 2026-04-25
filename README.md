@@ -1,4 +1,4 @@
-### 📘 Design: Decade Counter (dCounter)
+## 📘 Design: Decade Counter (dCounter)
 
 ## 🔷 Description
 
