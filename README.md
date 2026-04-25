@@ -1,6 +1,5 @@
-==============================
 📘 Design: Decade Counter (dCounter)
-====================================
+
 ## 🔷 Description
 
 This design implements a **4-bit decade counter (MOD-10)** using sequential logic.
@@ -112,6 +111,17 @@ A condition where a flip-flop output becomes **unstable (neither 0 nor 1 tempora
 📌 **How to reduce it?**
 
 * Use **synchronizers (2 flip-flop stages)**
+```
+//Removed part from the Design: 
+reg rst_sync1, rst_sync2;
+
+always @(posedge clk_i) begin
+   rst_sync1 <= rst_i;
+   rst_sync2 <= rst_sync1;
+end
+//and now we can use rst_sync2, to reduce probability of metastability.
+//This may be used by me in the future, like in FIFO designs. check repo for more context.
+```
 * Avoid asynchronous inputs where possible
 * Maintain proper timing constraints
 
